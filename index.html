@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Algorithms & Polarization</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .insta-gradient {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+        .insta-text {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-card shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i data-lucide="instagram" class="w-6 h-6 text-pink-600"></i>
+                    <span class="font-bold text-xl tracking-tight insta-text">Polarization Research</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#interface" class="text-sm font-medium text-slate-600 hover:text-pink-600 transition">The Interface</a>
+                    <a href="#algorithm" class="text-sm font-medium text-slate-600 hover:text-pink-600 transition">How it Works</a>
+                    <a href="#my-use" class="text-sm font-medium text-slate-600 hover:text-pink-600 transition">Echo Chambers</a>
+                    <a href="#impact" class="text-sm font-medium text-slate-600 hover:text-pink-600 transition">The Impact</a>
+                    <a href="#solutions" class="text-sm font-medium text-slate-600 hover:text-pink-600 transition">Solutions</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col items-center text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pink-100 text-pink-700 font-medium text-sm mb-6">
+            <i data-lucide="book-open" class="w-4 h-4"></i> Based on 2024-2026 Research Data
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-slate-900">
+            Instagram Algorithms & <br />
+            <span class="insta-text">Polarization</span>
+        </h1>
+        <p class="mt-4 max-w-2xl text-lg text-slate-600 mb-10">
+            With 2 to 3 billion monthly active users—reaching over a quarter of the global population—are the algorithms in Instagram creating a polarized universe? Explore the technical architectures of division, the echo chamber effect, and the societal impact of social media curation.
+        </p>
+        <a href="#interface" class="insta-gradient text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:-translate-y-1 transition duration-300 flex items-center gap-2">
+            Explore the Research <i data-lucide="arrow-down" class="w-5 h-5"></i>
+        </a>
+    </section>
+
+    <!-- Section 1: The Interface -->
+    <section id="interface" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/2">
+                    <div class="aspect-[4/5] bg-slate-100 rounded-3xl overflow-hidden relative shadow-2xl flex items-center justify-center border-8 border-white">
+                        <!-- Mockup illustration -->
+                        <div class="absolute inset-0 insta-gradient opacity-10"></div>
+                        <i data-lucide="smartphone" class="w-32 h-32 text-slate-300"></i>
+                        <div class="absolute bottom-10 left-10 right-10 bg-white/90 backdrop-blur p-6 rounded-2xl shadow-sm">
+                            <div class="flex gap-4 items-center mb-4">
+                                <div class="w-10 h-10 rounded-full insta-gradient"></div>
+                                <div>
+                                    <div class="h-3 w-24 bg-slate-200 rounded mb-2"></div>
+                                    <div class="h-2 w-16 bg-slate-100 rounded"></div>
+                                </div>
+                            </div>
+                            <div class="h-20 w-full bg-slate-100 rounded mb-4"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6 text-slate-900">The Instagram Interface</h2>
+                    <h3 class="text-xl text-pink-600 font-medium mb-4">From Utility to Recommendation Engine</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        The digital information environment has undergone a foundational shift. Instagram has transformed from a rudimentary, user-directed chronological photo-sharing utility into a sophisticated system of algorithmic curation.
+                    </p>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Since the pivotal switch from chronological to algorithmic feeds in 2016, the platform has fully integrated a multi-layered AI ranking architecture. The interface is no longer just reflecting your social network; it prioritizes content that matches your past behavior (likes, saves, watch time) to maximize psychological engagement and platform retention.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 bg-pink-100 p-1 rounded text-pink-600"><i data-lucide="layout" class="w-4 h-4"></i></div>
+                            <span class="text-slate-700"><strong>Visual Dominance:</strong> Highly visual nature amplifies emotional resonance and social identity.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 bg-pink-100 p-1 rounded text-pink-600"><i data-lucide="mouse-pointer-click" class="w-4 h-4"></i></div>
+                            <span class="text-slate-700"><strong>Frictionless Consumption:</strong> Features like endless scroll and auto-playing Reels remove stopping cues.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Algorithm Mechanics -->
+    <section id="algorithm" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">How does Instagram’s algorithm work and why?</h2>
+                <p class="text-lg text-slate-600 max-w-3xl mx-auto">
+                    There is no single "algorithm." It is a complex web of interconnected machine learning models tailored to distinct surfaces, designed to amplify confirmation bias by showing you more of what you already agree with.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Feed Card -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-slate-100">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="home" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Feed</h3>
+                    <p class="text-slate-600 text-sm">Prioritizes content from accounts you follow. Ranks based on probability of interaction: seconds spent, commenting, liking, or saving.</p>
+                </div>
+                <!-- Stories Card -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-slate-100">
+                    <div class="w-12 h-12 bg-pink-100 text-pink-600 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="circle-dashed" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Stories</h3>
+                    <p class="text-slate-600 text-sm">Focuses on close connections. The algorithm looks at viewing history, engagement (replies/reactions), and closeness (relationship signals).</p>
+                </div>
+                <!-- Explore Card -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-slate-100">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="search" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Explore</h3>
+                    <p class="text-slate-600 text-sm">Designed to discover new things. Predicts what you might like based on past behavior, emphasizing "likes", "saves", and "shares".</p>
+                </div>
+                <!-- Reels Card -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-slate-100">
+                    <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="play-square" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Reels</h3>
+                    <p class="text-slate-600 text-sm">Engineered for entertainment. Heavily weights full-watch times and audio track interactions to keep you on the platform as long as possible.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-slate-800 text-white rounded-2xl p-8 flex flex-col md:flex-row items-center gap-8 shadow-xl">
+                <div class="md:w-2/3">
+                    <h4 class="text-xl font-bold mb-3">The "Why": The Attention Economy</h4>
+                    <p class="text-slate-300">The overarching objective of this multi-stage ranking funnel is to solve information overload while maximizing user engagement. By surfacing highly personalized content, the platform incentivizes prolonged session times, which directly correlates to advertising revenue.</p>
+                </div>
+                <div class="md:w-1/3 flex justify-center">
+                    <div class="w-24 h-24 rounded-full border-4 border-pink-500 border-t-transparent animate-spin"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: My Use & Echo Chambers -->
+    <section id="my-use" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-slate-900">My Use of Insta</h2>
+                    <div class="bg-pink-50 rounded-2xl p-8 border border-pink-100 relative">
+                        <i data-lucide="quote" class="w-12 h-12 text-pink-200 absolute top-4 right-4"></i>
+                        <p class="text-slate-700 italic mb-4 text-lg">
+                            "When I use Instagram, it feels like the whole world agrees with me. My feed is filled with the aesthetics I like, the opinions I hold, and the lifestyles I aspire to. But is it reality, or just my reflection?"
+                        </p>
+                        <p class="text-slate-600">
+                            Personal usage patterns dictate the algorithmic output. Every like, pause, and swipe trains the machine. This seamless experience, while satisfying, creates an invisible barrier to diverse content.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-slate-900">The Echo Chamber Effect</h2>
+                    <p class="text-slate-600 mb-6">
+                        Case studies on Instagram reveal clear <strong>"echo chamber"</strong> patterns. Algorithms cluster users into like‑minded communities where similar views are repeatedly reinforced and opposing views become scarce. This structure intensifies polarization by fragmenting networks.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-red-100 flex items-center justify-center text-red-600">
+                                <i data-lucide="filter" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Selective Exposure</h4>
+                                <p class="text-sm text-slate-600">You keep seeing more of what you already agree with or are emotionally drawn to, heavily amplifying confirmation bias.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600">
+                                <i data-lucide="users" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Network Fragmentation</h4>
+                                <p class="text-sm text-slate-600">Moderate or nuanced posts become less visible compared to emotionally charged, extreme content, pushing communities further apart.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Polarization & Impact -->
+    <section id="impact" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">The Real-World Impact</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Case Study 1 -->
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:-translate-y-2 transition duration-300">
+                    <i data-lucide="landmark" class="w-8 h-8 text-yellow-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Political Polarization</h3>
+                    <h4 class="text-sm text-yellow-400 mb-3 font-semibold">Case: 2024 PILKADA Law (Indonesia)</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Research shows Instagram's algorithms actively shaped echo chambers during the revision of the Pilkada Law by prioritizing aligned content. This amplified polarization and reduced openness to differing democratic perspectives in digital spaces.
+                    </p>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:-translate-y-2 transition duration-300">
+                    <i data-lucide="trending-up" class="w-8 h-8 text-pink-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Affective Polarization</h3>
+                    <h4 class="text-sm text-pink-400 mb-3 font-semibold">Study: Algorithmic Feed Effects</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        A study altering algorithmic exposure demonstrated that ranking feeds to surface antagonistic partisan content can measurably increase affective polarization in just <strong>one week</strong>—an effect size normally seen over several years of societal change.
+                    </p>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:-translate-y-2 transition duration-300">
+                    <i data-lucide="brain" class="w-8 h-8 text-blue-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">The Mental Health Crisis</h3>
+                    <h4 class="text-sm text-blue-400 mb-3 font-semibold">CESifo Working Paper (2025)</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Research exploiting Instagram's 2016 switch to an algorithmic feed found it worsened teenagers' mental health. It increased negative social comparison, feelings that social media makes life look worse, and pressure to present oneself positively.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-slate-300 italic max-w-2xl mx-auto">
+                    "Algorithms alone do not mechanically 'cause' everyone to polarize, but they act as a catalyst by boosting extreme, emotional voices and weakening our exposure to moderates."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Solutions -->
+    <section id="solutions" class="py-20 bg-pink-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 text-slate-900">Breaking the Bubble</h2>
+                <p class="text-lg text-slate-700 max-w-3xl mx-auto">
+                    Mitigating these effects requires a combination of systemic regulatory frameworks and intentional, personal user habits to cultivate a healthier informational ecosystem.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Systemic Solutions -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-slate-900 border-b border-pink-200 pb-2">Systemic Solutions</h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <div class="bg-white p-2 rounded shadow-sm text-green-600"><i data-lucide="scale" class="w-6 h-6"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Regulatory Action (EU DSA)</h4>
+                                <p class="text-sm text-slate-600">The EU’s Digital Services Act forces platforms to assess systemic risks, mandates greater algorithmic transparency, and requires options for non-personalized chronological feeds.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="bg-white p-2 rounded shadow-sm text-blue-600"><i data-lucide="globe" class="w-6 h-6"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Vienna Manifesto on Digital Humanism</h4>
+                                <p class="text-sm text-slate-600">Advocates that digital technologies must be designed to promote democracy and inclusion, safeguarding freedom of speech and altering platforms to protect privacy.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="bg-white p-2 rounded shadow-sm text-orange-600"><i data-lucide="code" class="w-6 h-6"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Algorithmic Tuning & Transparency</h4>
+                                <p class="text-sm text-slate-600">Experiments show that intentionally tuning algorithms to down-rank hostile, antidemocratic content can successfully reduce affective polarization among users.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Personal Action Solutions -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-slate-900 border-b border-pink-200 pb-2">Personal Action: How to Break Out</h3>
+                    <div class="space-y-4">
+                        <!-- Card 1 -->
+                        <div class="bg-white p-4 rounded-xl shadow-sm border border-pink-100 flex gap-4">
+                            <div class="text-pink-500 mt-1"><i data-lucide="refresh-cw" class="w-5 h-5"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Change In-App Behavior</h4>
+                                <p class="text-xs text-slate-600 mt-1">Actively search for and engage with diverse viewpoints. Regularly audit who you follow and mute accounts that only repeat existing views or constantly trigger outrage.</p>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="bg-white p-4 rounded-xl shadow-sm border border-pink-100 flex gap-4">
+                            <div class="text-pink-500 mt-1"><i data-lucide="settings-2" class="w-5 h-5"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Use Features Strategically</h4>
+                                <p class="text-xs text-slate-600 mt-1">Spend more time in manual search rather than passively scrolling Reels. Switch to chronological feeds (like "Following" or "Close Friends") to bypass algorithmic ranking.</p>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="bg-white p-4 rounded-xl shadow-sm border border-pink-100 flex gap-4">
+                            <div class="text-pink-500 mt-1"><i data-lucide="users" class="w-5 h-5"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Curate a Diverse Network</h4>
+                                <p class="text-xs text-slate-600 mt-1">Follow "bridge accounts" (journalists, scholars) who talk across divides rather than loud, one-sided influencers who rely on partisan outrage.</p>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="bg-white p-4 rounded-xl shadow-sm border border-pink-100 flex gap-4">
+                            <div class="text-pink-500 mt-1"><i data-lucide="book-open" class="w-5 h-5"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Practice Algorithmic Literacy</h4>
+                                <p class="text-xs text-slate-600 mt-1">Remember your feed is curated, not reality. Notice emotional hooks (fear, humiliation) designed to perform well algorithmically, and verify facts off-platform.</p>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="bg-white p-4 rounded-xl shadow-sm border border-pink-100 flex gap-4">
+                            <div class="text-pink-500 mt-1"><i data-lucide="clock" class="w-5 h-5"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Set Personal Boundaries</h4>
+                                <p class="text-xs text-slate-600 mt-1">Intentionally source news from quality offline or direct sources so Instagram isn't your main input. Take periodic breaks to lower the pull of intense content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <i data-lucide="instagram" class="w-8 h-8 mx-auto text-slate-600 mb-6"></i>
+            <h3 class="text-white font-bold text-xl mb-4">Research & Presentation Synthesis</h3>
+            <p class="text-sm max-w-2xl mx-auto mb-8">
+                Based on research papers regarding algorithmic orchestration of discord, echo chambers (e.g., Pilkada Law Case Study), psychological impacts, and solutions for a healthier digital media landscape. Note: Instagram reaches an estimated 2-3 billion users globally, representing roughly a quarter of the world's population.
+            </p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="hover:text-white transition">References</a>
+                <a href="#" class="hover:text-white transition">Data sources</a>
+                <a href="#" class="hover:text-white transition">Methodology</a>
+            </div>
+            <p class="mt-8 text-xs text-slate-600">
+                &copy; 2026 Social Media Polarization Research. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
